@@ -46,8 +46,13 @@ public class Productpage_steps  extends Productspage{
     }
     @Step("Cart click")
     public Productpage_steps cartclick(){
-        cart.shouldBe(Condition.visible, Duration.ofMillis(10000));
+        successadd.shouldNotBe(Condition.visible, Duration.ofMillis(10000));
         cart.click();
+        return this;
+    }
+    @Step("Click add to cart button for 2nd product")
+    public Productpage_steps addtocart2(){
+        addtocart2.click();
         return this;
     }
 }

@@ -1,8 +1,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Automation Suite" verbose="1" thread-count="1" parallel="tests">
-    <test name="Test" parallel="tests">
+    <test name="SearchTests" parallel="tests">
         <classes>
-            <class name="searchcheck_Test"/>
+            <class name="searchinput_Test"/>
+        </classes>
+    </test>
+    <test name="Cart product parameters Test" parallel="tests">
+        <classes>
+            <class name="cartproductparams_Test"/>
+        </classes>
+    </test>
+    <test name="Cart Test" parallel="tests">
+        <classes>
+            <class name="cartpage_Test"/>
+        </classes>
+    </test>
+    <test name="Legal page Tests" parallel="tests">
+        <classes>
+            <class name="Legalpage_Test"/>
         </classes>
     </test>
 </suite>

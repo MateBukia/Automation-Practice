@@ -15,7 +15,7 @@ public class Homepage_steps extends Homepage {
         search.shouldBe(Condition.visible);
         return this;
     }
-    @Step("set search product")
+    @Step("set search product:{searchproduct}")
     public Homepage_steps sendvalue(String searchproduct){
         search.setValue(searchproduct);
         return this;
@@ -25,7 +25,7 @@ public class Homepage_steps extends Homepage {
         searchclickbtn.click();
         return this;
     }
-    @Step("Check for invalid search")
+    @Step("Check for invalid search:{invalidsearchproduct}")
     public Homepage_steps sendinvalidvalue(String invalidsearchproduct){
         search.setValue(invalidsearchproduct);
         return this;

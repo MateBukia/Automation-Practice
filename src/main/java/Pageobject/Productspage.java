@@ -15,6 +15,7 @@ public class Productspage {
             searchtitle = $(byAttribute("class","prod_title"),0),
             errorline3 = $(byText("'satesto'")),
             addtocart = $(byAttribute("onclick","updateCartItemColor(1435)")),
+            addtocart2 = $(byAttribute("onclick","updateCartItemColor(1487)")),
             successadd = $(byText("პროდუქტი წარმატებით დაემატა კალათაში")),
             cart = $(byAttribute("class","cart_info")),
             errorline2 = $(byText("ვერაფერი მოიძებნა"));
